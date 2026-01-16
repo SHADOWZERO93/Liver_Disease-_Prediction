@@ -1,6 +1,6 @@
 # 🩺 Liver Disease Prediction using Machine Learning
 
-This project predicts the likelihood of liver disease using clinical and demographic data. It applies machine learning techniques with proper data preprocessing, class balancing, model evaluation, and an interactive user interface for predictions.
+This project predicts the likelihood of liver disease using clinical and demographic data. It applies machine learning techniques with proper data preprocessing, class balancing, model evaluation, and an **interactive user interface** for predictions.
 
 ---
 
@@ -20,54 +20,34 @@ An interactive UI built with **ipywidgets** allows users to input patient data a
 - Randomized multi-round search for optimal K value  
 - KNN-based classification  
 - Model evaluation using classification report  
-- Interactive prediction UI with confidence visualization  
+- **Interactive prediction UI with confidence visualization**  
 
 ---
 
 ## 📊 Dataset
 
-- **Source:** UCI Machine Learning Repository  
-- **Dataset:** Indian Liver Patient Dataset (ILPD)
-
-### Attributes:
-- Age  
-- Gender  
-- Total Bilirubin (TB)  
-- Direct Bilirubin (DB)  
-- Alkaline Phosphotase  
-- Alanine Aminotransferase (SGPT)  
-- Aspartate Aminotransferase (SGOT)  
-- Total Proteins (TP)  
-- Albumin (ALB)  
-- Albumin/Globulin Ratio  
-
-**Target Variable:**  
-- `1` → Liver Disease  
-- `0` → Healthy  
+- **Source:** [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/ILPD+(Indian+Liver+Patient+Dataset))  
+- **Attributes:** Age, Gender, TB, DB, Alkphos, SGPT, SGOT, TP, ALB, Albumin/Globulin Ratio  
+- **Target:** `1` → Liver Disease, `0` → Healthy  
 
 ---
 
 ## 🛠️ Technologies Used
 
 - **Programming Language:** Python  
-- **Libraries:**
-  - Pandas, NumPy
-  - Matplotlib
-  - Scikit-learn
-  - imbalanced-learn (SMOTE)
-  - ipywidgets
+- **Libraries:** Pandas, NumPy, Matplotlib, Scikit-learn, imbalanced-learn (SMOTE), ipywidgets  
 - **Tools:** Jupyter Notebook / Google Colab, VS Code  
 
 ---
 
-## 🔍 Methodology
+## 🔍 How It Works
 
 1. Load and inspect dataset  
 2. Encode categorical features (Gender)  
-3. Handle missing values using mean imputation  
+3. Handle missing values with mean imputation  
 4. Scale features using StandardScaler  
-5. Balance dataset using SMOTE  
-6. Split data into training and testing sets  
+5. Balance dataset with SMOTE  
+6. Split data into training/testing sets  
 7. Perform randomized K search for optimal neighbors  
 8. Train final KNN model  
 9. Evaluate model performance  
@@ -75,37 +55,12 @@ An interactive UI built with **ipywidgets** allows users to input patient data a
 
 ---
 
-## 🤖 Model Used
+## ⚠️ Important Note
 
-- **K-Nearest Neighbors (KNN)**
-- Randomized search for best `K`
-- Probability-based prediction confidence
+GitHub **cannot render interactive widgets** (`ipywidgets`) directly.  
+To use the interactive sliders and buttons:
 
----
+1. **Run the notebook locally** in Jupyter Notebook or VS Code  
+2. **Or open it in Google Colab** (recommended)
 
-## 📈 Evaluation Metrics
-
-- Accuracy  
-- Precision  
-- Recall  
-- F1-score  
-- Confusion Matrix  
-- Classification Report  
-
----
-
-## 🖥️ Interactive Prediction Interface
-
-The project includes an interactive UI where users can:
-- Input patient health parameters  
-- Get disease prediction (Healthy / Liver Disease)  
-- View prediction confidence  
-- Compare values with normal medical ranges  
-- Visualize probability distribution  
-
----
-## 🚀 How to Run the Project
-⚠️ Note: This project uses ipywidgets for interactivity.
-GitHub does not support rendering interactive widgets.
-Please run the notebook locally or on Google Colab to use the UI.
 
