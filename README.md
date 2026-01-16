@@ -104,3 +104,8 @@ The project includes an interactive UI where users can:
 - Visualize probability distribution  
 
 ---
+## 🚀 How to Run the Project
+⚠️ Note: This project uses ipywidgets for interactivity.
+GitHub does not support rendering interactive widgets.
+Please run the notebook locally or on Google Colab to use the UI.
+
